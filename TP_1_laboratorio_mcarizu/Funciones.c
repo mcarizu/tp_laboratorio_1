@@ -32,14 +32,7 @@ int dividir(int x, int y)
 
     return resultado;
 }
-int ingresarNumeros(char mensaje[],int x)
-{
 
-    printf("%s",mensaje);
-    scanf("%d",&x);
-    return x;
-
-}
 int factorial(int x)
 {
     int fact=1;
@@ -64,10 +57,13 @@ void menu(void){
 
 
 
-    while(op<'1'||op>'9'){
-             printf("\t\t\tIngrese un valor 1-6\n1)Ingresar 1er operando A=x\n2)Ingresar 2do operando B=y\n3)Calcular la Suma\n4)Calcular la Resta\n5)Calcular la Multiplicacion\n6)Calcular la Divicion\n7)Calcular el Factorial\n8)Todos las operaciones\n9)\nSalir\n", 1,  9);
-             op =scanf("d",&op);
-         switch(op){
+    while(op<'1'||op>'9')
+    {
+        printf("\t\t\tIngrese un valor 1-6\n1)Ingresar 1er operando A=x\n2)Ingresar 2do operando B=y\n3)Calcular la Suma\n4)Calcular la Resta\n5)Calcular la Multiplicacion\n6)Calcular la Divicion\n7)Calcular el Factorial\n8)Todos las operaciones\n9) Salir\n");
+        scanf("%d",&op);
+
+        switch(op)
+        {
 
             case 1 :x=ingresarNumeros("Ingrese un Valor para A\n",x);
                     printf("\nEl valor de A :%d\n",x);
@@ -98,10 +94,11 @@ void menu(void){
             case 8: printf("Calcular todas las operaciones");
                 break;
             case 9 : printf("Salir");
-                    op=9;
+                    op='9';
                 break;
             default: printf("Ingrese un valor valido\n");
         }
-         return 0;
+
     }
+    return 0;
 }

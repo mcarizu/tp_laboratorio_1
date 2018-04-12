@@ -11,9 +11,17 @@ int pedirDatos(char texto[],int min, int max){                              /*Fu
     int retorno;
         printf("%s",texto);
         scanf("%d",&retorno);
-    while(retorno<min || retorno>max){
+    while(retorno < min || retorno > max){
         printf("Error !!! Reigrese Dato,\n%s",texto);
         scanf("%d",&retorno);
     }
     return retorno;
+}
+int ingresarNumeros(char mensaje[],int x)
+{
+
+    printf("%s",mensaje);
+    scanf("%d",&x);
+    return x;
+
 }
