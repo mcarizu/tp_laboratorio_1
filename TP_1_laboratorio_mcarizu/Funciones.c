@@ -57,10 +57,11 @@ void menu(void){
 
 
 
+
     while(op<'1'||op>'9')
     {
         printf("\t\t\tIngrese un valor 1-6\n1)Ingresar 1er operando A=x\n2)Ingresar 2do operando B=y\n3)Calcular la Suma\n4)Calcular la Resta\n5)Calcular la Multiplicacion\n6)Calcular la Divicion\n7)Calcular el Factorial\n8)Todos las operaciones\n9) Salir\n");
-        scanf("%d",&op);
+        op=pedirDatos("Ingrese una opcion",1,9);
 
         switch(op)
         {
