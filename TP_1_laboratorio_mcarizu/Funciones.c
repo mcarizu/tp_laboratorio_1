@@ -5,7 +5,10 @@
 #include"Validaciones.h"
 
 
-
+//brief ingresan dos variables para calcular la suma
+//param entero para calcular
+//param segundo entero para calcular
+//retorna el resultado
 int sumar(int x, int y)
 {
     int resultado;
@@ -14,12 +17,22 @@ int sumar(int x, int y)
     resultado = x + y;
     return resultado;
 }
+//brief ingresan dos variables para calcular la resta
+//param entero para calcular
+//param segundo entero para calcular
+//retorna el resultado
+
 int restar(int x, int y)
 {
     int resultado;
     resultado = x-y;
     return resultado;
 }
+//brief ingresan dos variables para calcular la multiplicacion
+//param entero para calcular
+//param segundo entero para calcular
+//retorna el resultado
+
 int multiplicar(int x, int y)
 {
     int resultado;
@@ -27,6 +40,11 @@ int multiplicar(int x, int y)
     resultado = x*y;
     return resultado;
 }
+//brief ingresan dos variables para calcular la divicion, valida que el segundo parametro no sea 0
+//param entero para calcular
+//param segundo entero para calcular
+//retorna la divicion
+
 float dividir(int x, int y)
 {
 
@@ -37,7 +55,7 @@ float dividir(int x, int y)
 
 
     while(y==0){
-       y=ingresarNumeros("re Ingrese un dato mayor a cero\n",y,1,99999999);
+       y=ingresarNumeros("\nre Ingrese un dato mayor a cero\n",y,1,99999999);
     }
     resultado=(float)x/y;
     resto=x%y;
@@ -46,6 +64,11 @@ float dividir(int x, int y)
     return 0;
 
 }
+
+//brief ingresa una variable para calcular el factorial
+//param entero para calcular elfactorial
+//retorna el factorial
+
 int factorial(int x)
 {
     int fact=1;
@@ -54,7 +77,7 @@ int factorial(int x)
 
     if ( x <= 0)
     {
-        printf("error- solo admite positivos");
+        printf("\nerror- solo admite positivos\n");
     }
     else {
         for( n=valor; n>=1; n--)
@@ -65,6 +88,12 @@ int factorial(int x)
     printf("\n\t\tEl factorial de :%d es :%d\n\n",valor,fact);
     return fact;
 }
+//brief ingresan dos variables y llama a todas las funciones
+//param entero para calcular
+//param segundo entero para calcular
+//
+
+
 void todasLasFunciones(int x, int y)
 {
     int suma=0;
@@ -93,13 +122,13 @@ void todasLasFunciones(int x, int y)
 
 }
 
-
+//brief
 void menu(void){
 
     int x=0;
     int y=0;
     int total=0;
-    int  op=0;
+    int op=0;
     int flagA=0;
     int flagB=0;
 
@@ -131,7 +160,7 @@ void menu(void){
                             }
                             else
                             {
-                                printf("Faltan datos para realizar la operacion");
+                                printf("\nFaltan datos para realizar la operacion\n");
                             }
                     break;
             case 4 :printf("\nPara la Resta...\n");
@@ -142,7 +171,7 @@ void menu(void){
                             }
                         else
                             {
-                                printf("Faltan datos para realizar la operacion");
+                                printf("\nFaltan datos para realizar la operacion\n");
                             }
                     break;
             case 5 :printf("\nPara la Multiplicar...\n");
@@ -153,7 +182,7 @@ void menu(void){
                             }
                         else
                             {
-                                printf("Faltan datos para realizar la operacion");
+                               printf("\nFaltan datos para realizar la operacion\n");
                             }
                     break;
             case 6 :printf("\nPara la Dividir...\n");
@@ -164,7 +193,7 @@ void menu(void){
                             }
                            else
                             {
-                                printf("Faltan datos para realizar la operacion");
+                                printf("\nFaltan datos para realizar la operacion\n");
                             }
                     break;
             case 7 :printf("\nPara el Factorial...\n La funcion factorial no toma valores grande son datos -INT -enteros-\n");
@@ -174,7 +203,7 @@ void menu(void){
                             }
                         else
                             {
-                                printf("Faltan datos para realizar la operacion");
+                                printf("\nFaltan datos para realizar la operacion\n");
                             }
                     break;
 

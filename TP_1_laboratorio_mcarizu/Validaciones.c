@@ -4,7 +4,11 @@
 #include"Funciones.h"
 #include"Validaciones.h"
 
-
+//brief ingresan dos valores para validacion de datos
+//param variable que muestra el mensaje para el usuario
+//param entero toma el minimo
+//param segundo entero toma el maximo
+//retorna el resultado
 
 int pedirDatos(char texto[],int min, int max){                              /*Funcion generica, se puede usar para cualquier tipo de ingreso de datos, siempre cambiando el formato de de salida */
 
@@ -27,6 +31,13 @@ int pedirDatos(char texto[],int min, int max){                              /*Fu
         return retorno;
 
 }
+
+//brief ingresan dos valores para validacion de datos
+//param variable que muestra el mensaje para el usuario
+//param que toma el dato ingresado por el usuario
+//param entero toma el minimo
+//param segundo entero toma el maximo
+//retorna el resultado
 
 int ingresarNumeros(char mensaje[],int x,int min, int max)
 {

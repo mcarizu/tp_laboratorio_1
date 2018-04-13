@@ -1,6 +1,12 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
+/*
 
+
+
+
+
+*/
 int sumar(int,int);
 int restar(int,int);
 int multiplicar(int,int);
