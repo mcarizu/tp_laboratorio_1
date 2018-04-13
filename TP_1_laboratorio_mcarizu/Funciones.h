@@ -4,9 +4,11 @@
 int sumar(int,int);
 int restar(int,int);
 int multiplicar(int,int);
-int dividir(int,int);
+float dividir(int,int);
 void menu(void);
 int factorial(int);
+void todasLasFunciones(int,int);
+
 
 
 #endif // FUNCIONES_H_INCLUDED

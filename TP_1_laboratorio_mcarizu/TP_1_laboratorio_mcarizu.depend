@@ -1,23 +1,23 @@
 # depslib dependency file v1.0
-1523468966 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\main.c
+1523582015 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	"Funciones.h"
 	"Validaciones.h"
 
-1523501215 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\funciones.c
+1523585075 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\funciones.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	"Funciones.h"
 	"Validaciones.h"
 
-1523490859 c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\funciones.h
+1523583996 c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\funciones.h
 
-1523490864 c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\validaciones.h
+1523579907 c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\validaciones.h
 
-1523491867 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\validaciones.c
+1523584229 source:c:\users\matias\documents\curso de c\tp_1_mcarizu\tp_laboratorio_1\tp_1_laboratorio_mcarizu\validaciones.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

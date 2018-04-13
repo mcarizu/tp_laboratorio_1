@@ -6,6 +6,7 @@
 
 int main()
 {
+    fflush(stdin);
     menu();
     return 0;
 }
