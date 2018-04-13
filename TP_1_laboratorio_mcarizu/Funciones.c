@@ -52,12 +52,16 @@ int factorial(int x)
     int valor=x;
     int n;
 
-
+    if ( x <= 0)
+    {
+        printf("error- solo admite positivos");
+    }
+    else {
         for( n=valor; n>=1; n--)
         {
             fact=fact*n;
         }
-
+    }
     printf("\n\t\tEl factorial de :%d es :%d\n\n",valor,fact);
     return fact;
 }
@@ -66,7 +70,7 @@ void todasLasFunciones(int x, int y)
     int suma=0;
     int resta=0;
     int multi=0;
-    float divi=0;
+
     //int fact=0;
 
         system("pause");
@@ -78,7 +82,7 @@ void todasLasFunciones(int x, int y)
                     printf("\n\t\tEl Resultado de la Resta es : %d\n",resta);
                     multi=multiplicar(x, y);
                     printf("\n\t\tEl Resultado de la Multiplicaion : %d\n", multi);
-                    divi=dividir(x, y);
+                    dividir(x, y);
                     //printf("\n\t\tEl Resultado de la divicion : %d\n",divi);
                     //fact=
                     factorial(x);
@@ -89,12 +93,15 @@ void todasLasFunciones(int x, int y)
 
 }
 
+
 void menu(void){
 
     int x=0;
     int y=0;
     int total=0;
     int  op=0;
+    int flagA=0;
+    int flagB=0;
 
     fflush(stdin);
     while(op<'1'||op>'9')
@@ -109,29 +116,66 @@ void menu(void){
         {
 
             case 1 :x=ingresarNumeros("Ingrese un Valor para A\n",x,0,99999999);// numero maximo que permite una calculadora
+                    flagA=1;
                     printf("\nEl valor de A :%d\n",x);
                     break;
             case 2 :y=ingresarNumeros("Ingrese un Valor para B\n",y,0,99999999);
+                    flagB=1;
                     printf("\nEl valor de B :%d\n",y);
                     break;
             case 3 :printf("\nLa Suma...\n");
-                    total = sumar(x, y);
-                    printf("\nEl Resultado de la suma es: %d\n",total);
+                    if (flagA ==1 && flagB==1)
+                            {
+                                total = sumar(x, y);
+                                printf("\nEl Resultado de la suma es: %d\n",total);
+                            }
+                            else
+                            {
+                                printf("Faltan datos para realizar la operacion");
+                            }
                     break;
             case 4 :printf("\nPara la Resta...\n");
-                    total=restar(x, y);
-                    printf("\nEl Resultado de la resta es: %d\n",total);
+                        if (flagA ==1 && flagB==1)
+                            {
+                                total=restar(x, y);
+                                printf("\nEl Resultado de la resta es: %d\n",total);
+                            }
+                        else
+                            {
+                                printf("Faltan datos para realizar la operacion");
+                            }
                     break;
             case 5 :printf("\nPara la Multiplicar...\n");
-                    total=multiplicar(x, y);
-                    printf("\nEl Resultado de la multiplicacion es: %d\n",total);
+                        if (flagA ==1 && flagB==1)
+                            {
+                                total=multiplicar(x, y);
+                                printf("\nEl Resultado de la multiplicacion es: %d\n",total);
+                            }
+                        else
+                            {
+                                printf("Faltan datos para realizar la operacion");
+                            }
                     break;
             case 6 :printf("\nPara la Dividir...\n");
-                    total=dividir(x, y);
-                    printf("\nEl Resultado de la divicion: %d\n",total);
+                          if (flagA ==1 && flagB==1)
+                            {
+                                total=dividir(x, y);
+                                printf("\nEl Resultado de la divicion: %d\n",total);
+                            }
+                           else
+                            {
+                                printf("Faltan datos para realizar la operacion");
+                            }
                     break;
             case 7 :printf("\nPara el Factorial...\n La funcion factorial no toma valores grande son datos -INT -enteros-\n");
-                    total=factorial(x);
+                        if (flagA ==1 )
+                            {
+                                total=factorial(x);
+                            }
+                        else
+                            {
+                                printf("Faltan datos para realizar la operacion");
+                            }
                     break;
 
             case 8: printf("Calcular todas las operaciones\n\n");
@@ -144,5 +188,5 @@ void menu(void){
         }
 
     }
-    return 0;
+    //return 0;
 }
