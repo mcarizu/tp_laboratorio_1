@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1525731746 source:c:\users\matias\documents\curso de c\tp_laboratorio_1\tp_2_laboratorio_mcarizu\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+	"validaciones.h"
+
+1525731763 c:\users\matias\documents\curso de c\tp_laboratorio_1\tp_2_laboratorio_mcarizu\funciones.h
+
+1525731783 c:\users\matias\documents\curso de c\tp_laboratorio_1\tp_2_laboratorio_mcarizu\validaciones.h
+
+1525731728 source:c:\users\matias\documents\curso de c\tp_laboratorio_1\tp_2_laboratorio_mcarizu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+	"validaciones.h"
+
+1525731708 source:c:\users\matias\documents\curso de c\tp_laboratorio_1\tp_2_laboratorio_mcarizu\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
