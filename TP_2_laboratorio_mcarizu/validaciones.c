@@ -50,12 +50,15 @@ int esNumericoFlotante(char str[])
 }
 int validarNumero(int num,int min,int max)
 {
+
     while(num<min||num>max)
     {
-        fflush(stdin);
         printf("Dato no valido reingresar:\n");
+        fflush(stdin);
         scanf("%d", &num);
+
     }
+    return num;
 }
 
 int esNumerico(char str[])
