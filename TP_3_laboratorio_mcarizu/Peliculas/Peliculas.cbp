@@ -31,9 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="archi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="archi.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.h" />
 		<Unit filename="movie.c">
 			<Option compilerVar="CC" />
 		</Unit>

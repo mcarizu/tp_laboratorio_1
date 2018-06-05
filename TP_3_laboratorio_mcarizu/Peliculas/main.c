@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include"movie.h"
+#include"validaciones.h"
 
-#define TAM 10
+#define TAM_html 10
+#define TAM 20
 
 int main()
 {
-    eMovie Peliculas [TAM];
+
+    system("color CE");
+    eMovie PeliculasHard [TAM_html];
+
+    initStruct(PeliculasHard,TAM_html,0);
+
+    hardCode(PeliculasHard,TAM_html);
+
+    menuABM(PeliculasHard,TAM_html,"\nPeliculas\nIngrese una Opcion\n");
 
 
-    initStruct(Peliculas,TAM,0);
-    void menu();
-
-
-    printf("Hello world!\n");
     return 0;
 }

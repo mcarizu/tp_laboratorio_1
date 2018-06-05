@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1527465372 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1527465402 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\validaciones.h
+
+1528139275 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"movie.h"
+	"validaciones.h"
+
+1528072202 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\movie.h
+
+1528139273 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\movie.c
+	"movie.h"
+	"validaciones.h"
+	"archi.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1528082739 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\archi.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"movie.h"
+
+1528082414 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\archi.h
+	"movie.h"
+
+1528139372 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\menu.c
+	<string.h>
+	<stdio.h>
+	"validaciones.h"
+	"movie.h"
+	"menu.h"
+
+1528071675 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\menu.h
+	"movie.h"
+
