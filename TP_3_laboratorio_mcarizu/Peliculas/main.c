@@ -8,13 +8,15 @@
 
 int main()
 {
+int i;
 
-    system("color CE");
+
     eMovie PeliculasHard [TAM_html];
 
     initStruct(PeliculasHard,TAM_html,0);
 
     hardCode(PeliculasHard,TAM_html);
+
 
     menuABM(PeliculasHard,TAM_html,"\nPeliculas\nIngrese una Opcion\n");
 

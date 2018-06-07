@@ -59,7 +59,7 @@ int listadoPeliculas(eMovie Peliculas[] , int tamanio)
 {
     int i;
     ordenarPeliculas(Peliculas,tamanio);
-    printf("\n|  Estado  | ID |       TITULO       |    GENERO     |  DURACION  |  DESCRIPCION  |  PUNTAJE |   LINK    |\n");
+    //printf("\n|  Estado  | ID |       TITULO       |    GENERO     |  DURACION  |  DESCRIPCION  |  PUNTAJE |   LINK    |\n");
     for(i=0;i<tamanio;i++)
     {
         if(Peliculas[i].estado==1)
@@ -123,23 +123,26 @@ int borrarPelicula(eMovie Peliculas[],int tamanio, char mensaje[]){
     int index;
     int ID;
 
-
     printf("\n%s\n",mensaje);
     scanf("%d",&ID);
+   // ID=getInt(mensaje);
+
+    do{
+
 
     index=buscaIdPelicula(Peliculas,tamanio,ID);
-    do{
+
         if(index!=-1)
         {
-            Peliculas[index].estado=0;
+             Peliculas[index].estado=0;
             Peliculas[index].id =-1;
-
         }
         else
         {
-            printf("\nNo se encuentra el ID, Reigreselo\n");
+           printf("\nNo se encuentra el ID, Reigreselo\n");
             system("pause");
             system("cls");
+
         }
 
 
@@ -229,3 +232,54 @@ int hardPuntaje[10]={5,5,2,4,3,2,3,4,2,5};
 
 }
 
+int modificarPelicula(eMovie Peliculas[], int  tamanio, int id,char mensaje[])
+{
+    int index=0;
+    int duracionAux;
+    int puntajeAux;
+
+    printf(mensaje);
+    index=buscaIdPelicula(Peliculas,tamanio,id);
+    listaPelicula(Peliculas[index]);
+
+    if(index==-1)
+    {
+        printf("\n NO ENCUEENTRA EL ID !!!\n");
+        system("pause");
+    }
+    else
+        {
+
+
+
+         printf("\nModificar\n");
+
+
+         printf("\nIngrese el Titulo:\n");
+         fflush(stdin);
+         gets(Peliculas[index].titulo);
+
+         printf("\nIngrese el Genero:\n");
+         fflush(stdin);
+         gets(Peliculas[index].genero);
+
+         printf("\nIngrese la Descripcion:\n");
+         fflush(stdin);
+         gets(Peliculas[index].descripcion);
+
+         printf("\nIngrese la URL de la Imagen:\n");
+         fflush(stdin);
+         gets(Peliculas[index].link);
+
+         duracionAux=getInt("\nIngrese la duracion de la pelicula\n");
+         Peliculas[index].duracion=duracionAux;
+
+         puntajeAux=getInt("\nIngrese el Puntaje\n");
+         Peliculas[index].puntaje=puntajeAux;
+
+         Peliculas[index].id = +1;
+         Peliculas[index].estado=1;
+
+        }
+        GuardarArchivo(Peliculas,tamanio);
+}

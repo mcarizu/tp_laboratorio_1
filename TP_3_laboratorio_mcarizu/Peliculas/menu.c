@@ -8,9 +8,11 @@
 
 void menuABM(eMovie *peliculas, int tamanio,char mensaje[])
 {
+    system("color 9E");
     int op=0;
     listadoPeliculas(peliculas,tamanio);
     int s;
+    int id;
 
 
      do{
@@ -29,7 +31,7 @@ void menuABM(eMovie *peliculas, int tamanio,char mensaje[])
                     break;
                 case 2:
 
-                       s=borrarPelicula(peliculas,tamanio,"Pelicula a Borrar\nIngrese el ID a Borrar\n");
+                       s=borrarPelicula(peliculas,tamanio,"\nPelicula a Borrar\nIngrese el ID a Borrar\n");
                        if(s!=0)
                        {
                            op=6;
@@ -37,7 +39,8 @@ void menuABM(eMovie *peliculas, int tamanio,char mensaje[])
                        }
                        break;
                 case 3:
-                       printf("Modificar Pelicula");
+                        id=getInt("\nPelicula a Modificar\nIngrese el ID a Borrar\n");
+                        modificarPelicula(peliculas,tamanio,id,"\nPelicula a Modificar\nIngrese el ID\n");
 
                        break;
                 case 4:listadoPeliculas(peliculas,tamanio);

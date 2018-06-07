@@ -7,7 +7,7 @@
 
 1527465402 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\validaciones.h
 
-1528139275 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\main.c
+1528344999 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\main.c
 	<stdio.h>
 	<stdlib.h>
 	"movie.h"
@@ -15,7 +15,7 @@
 
 1528072202 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\movie.h
 
-1528139273 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\movie.c
+1528347151 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\movie.c
 	"movie.h"
 	"validaciones.h"
 	"archi.h"
@@ -32,7 +32,7 @@
 1528082414 c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\archi.h
 	"movie.h"
 
-1528139372 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\menu.c
+1528321881 source:c:\users\matias\documents\curso de c\tp_3_mcarizu\peliculas\menu.c
 	<string.h>
 	<stdio.h>
 	"validaciones.h"
